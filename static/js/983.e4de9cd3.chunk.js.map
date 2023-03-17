@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/983.e4de9cd3.chunk.js","mappings":"qKAMA,UAJiB,WACb,OAAO,eAAIA,UAAWC,EAAAA,EAAAA,MAAf,sBACV,C","sources":["pages/HomePage.jsx"],"sourcesContent":["import css from './styles.module.css'\n\nconst HomePage = () => {\n    return <h1 className={css.title}>Phonebook</h1>;\n};\n\nexport default HomePage;"],"names":["className","css"],"sourceRoot":""}
