@@ -13,13 +13,14 @@ export const UserMenu = () => {
 
   const handleLogOut = () => dispatch(logOut());
   return (
-    <Box style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+    <Box className={css.box}>
       <p className={css.name}>{user.name}</p>
       <Button
         variant="contained"
         size="small"
         type="button"
         onClick={handleLogOut}
+        className={css.btn}
       >
         <LogoutIcon />
       </Button>

@@ -5,10 +5,10 @@ import { UserMenu } from 'components/UserMenu/UserMenu';
 import NavBar from 'components/NavBar/NavBar';
 
 export const Layout = () => {
-    const { isLoggedIn } = useAuth();
+  const { isLoggedIn } = useAuth();
   return (
     <div className={css.container}>
-  {isLoggedIn ? <UserMenu /> : <NavBar />}
+      {isLoggedIn ? <UserMenu /> : <NavBar />}
       <Outlet />
     </div>
   );
