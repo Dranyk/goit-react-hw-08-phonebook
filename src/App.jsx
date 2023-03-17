@@ -1,3 +1,4 @@
+import css from './App.module.css';
 import { useEffect, lazy, Suspense } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
@@ -22,6 +23,7 @@ const App = () => {
     }, [dispatch]);
 
     return (
+        <div className={css.container} >
         <Suspense fallback={<Loader />}>
         {!isRefreshing && (
             <Routes>
@@ -38,6 +40,7 @@ const App = () => {
             </Routes>
           )}
         </Suspense>
+        </div>
     )
 }
 
