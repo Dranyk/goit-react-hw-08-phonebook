@@ -2,9 +2,13 @@
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    color: lightblue;
+    color: rgb(116, 192, 217);
     font-size: 100px;
     text-shadow: #FC0 1px 0 10px;
+    background-color: #fff;
+    border: #FC0 solid 1px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .form {
