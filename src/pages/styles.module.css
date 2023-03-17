@@ -2,11 +2,12 @@
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    color: rgb(116, 192, 217);
+    color: rgb(69, 166, 198);
     font-size: 100px;
     text-shadow: #FC0 1px 0 10px;
     background-color: #fff;
     border: #FC0 solid 1px;
+    border-radius: 5px;
     margin-right: 50px;
     margin-left: 50px;
 }
