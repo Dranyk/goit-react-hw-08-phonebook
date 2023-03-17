@@ -1,4 +1,5 @@
 import css from './ContactItem.module.css';
+import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/contactsOperations';
 import { getIsLoading } from '../../../redux/selectors';
@@ -29,3 +30,9 @@ const ContactItem = ({ id, name, phone }) => {
 };
 
 export default ContactItem;
+
+ContactItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
