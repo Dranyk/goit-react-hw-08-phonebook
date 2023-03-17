@@ -9,7 +9,7 @@ const AddForm = () => {
   const isLoading = useSelector(getIsLoading);
   const initialValues = {
     name: '',
-    phone: '',
+    number: '',
   };
 
   const handleFormSubmit = (contact, { resetForm }) => {
@@ -26,7 +26,7 @@ const AddForm = () => {
         </label>
         <label>
           <p>Number</p>
-          <Field type="tel" name="phone" />
+          <Field type="tel" name="number" />
         </label>
         <button className={css.button} type="submit" disabled={isLoading}>
           Add contact
